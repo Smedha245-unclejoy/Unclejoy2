@@ -79,10 +79,7 @@ public class Login extends AppCompatActivity {
             this.b=b;
 
         }
-          protected void onPreExecute(){
-              progressDialog.setMessage("Authenticating ...");
-              progressDialog.isIndeterminate();
-          }
+
 
         @Override
         protected String doInBackground(String... params) {
@@ -113,9 +110,6 @@ public class Login extends AppCompatActivity {
                 if(response.getStatusLine().getStatusCode() == 200){
                     System.out.println(response.getStatusLine().getStatusCode());
                     return params[0];
-
-
-
                 }else {
                     System.out.println(response.getStatusLine().getStatusCode());
                 }

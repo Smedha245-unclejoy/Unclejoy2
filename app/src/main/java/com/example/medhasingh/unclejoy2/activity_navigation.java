@@ -19,9 +19,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 public class activity_navigation extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -38,7 +35,6 @@ public class activity_navigation extends AppCompatActivity
         tabLayout.addTab(tabLayout.newTab().setText("Responded"));
         tabLayout.addTab(tabLayout.newTab().setText("Hire"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_CENTER);
-        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final android.support.v4.view.PagerAdapter adapter = new MyPagerAdapter
                 (getSupportFragmentManager(), tabLayout.getTabCount());
@@ -123,19 +119,22 @@ public class activity_navigation extends AppCompatActivity
             startActivity(login);
             finish();
 
-        } else if (id == R.id.nav_gallery) {
-            Intent signup=new Intent(activity_navigation.this,Signup.class);
-            startActivity(signup);
-
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_send) {
+        }  else if(id==R.id.nav_gallery) {
+           Intent how=new Intent(getApplicationContext(),how_it_works.class);
+            startActivity(how);
+
+        }else if(id==R.id.nav_settings){
 
         }
+
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
