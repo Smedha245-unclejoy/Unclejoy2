@@ -5,22 +5,32 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Login/Signup" />
+            android:title="Login/Signup"
+
+
+            />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="How it Works?" />
+            android:title="How it Works?"
+            />
+
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Terms and Conditions" />
+            android:title="Terms and Conditions"
+
+            />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Privacy Policies"/>
+            android:title="Privacy Policies"
+            />
         <item
             android:id="@+id/nav_settings"
-            android:title="Settings"/>
+            android:title="Settings"
+
+            />
     </group>
 
     <item android:title="Communicate">
@@ -28,11 +38,14 @@
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="Share"
+
+                />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Send"
+               />
         </menu>
     </item>
 

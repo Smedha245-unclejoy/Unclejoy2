@@ -1,30 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f2cdad"
-    android:touchscreenBlocksFocus="true">
+    android:touchscreenBlocksFocus="true"
+    tools:context="com.example.medhasingh.unclejoy2.Login">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unclejoy Says Sweet Hi!"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#020202" />
+    <TextView
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="User Login"
+        android:text=" Log In"
         android:textAlignment="center"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/userlog"
         android:gravity="center"
-        android:textColor="#fffefe"
-        android:background="#636379"
-        android:textStyle="bold|italic"
+        android:textColor="#030303"
         android:textSize="28dp">
 
     </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER YOUR DETAILS"
+        android:paddingLeft="40dp"
+        android:textColor="#020202"
+        android:layout_marginTop="50dp" />
 
 
     <EditText
@@ -35,7 +54,8 @@
         android:ems="15"
         android:paddingLeft="20dp"
         android:id="@+id/email"
-        android:hint="Email Address" />
+        android:hint="Email id"
+        android:layout_marginTop="10dp" />
 
     <EditText
         android:layout_width="300dp"
@@ -48,54 +68,84 @@
         android:imeOptions="actionDone"
         android:hint="Password" />
     <Button
-        android:layout_width="300dp"
-        android:layout_marginTop="20dp"
-        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="50dp"
         android:gravity="center"
         android:id="@+id/login"
         android:layout_gravity="center"
-        android:text="Login"
+        android:text="Log In"
         android:descendantFocusability="blocksDescendants"
-        android:background="#636379"
-
+        android:background="#e8581b"
         android:textColor="#faf9f9" />
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Not having an account ? Sign Up"
-        android:textColor="#060606"
-        android:id="@+id/signup_login"
-        android:clickable="true"
+        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:background="#f2cdad"
-        android:theme="@style/Animation.Design.BottomSheetDialog" />
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not having an account ?"
+            android:id="@+id/already"
+            android:clickable="true"
+            android:textColor="#060606"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Sign Up"
+            android:id="@+id/signup_login"
+            android:clickable="true"
+            android:textSize="20dp"
+            android:textColor="#ed5c18" />
+    </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Forgot Password"
-        android:textColor="#060606"
+        android:text="@string/forgot"
+        android:textColor="#cc0e0e"
         android:layout_gravity="center"
         android:id="@+id/forgotpasword"
         android:clickable="true"
-        android:background="#f2cdad" />
-    <ImageButton
+        android:textSize="20dp" />
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+         android:layout_height="wrap_content"
+        android:text="Or,Log In with your social site account"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="40dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/google"
-        android:src="@drawable/google"
-        android:background="#ffffff" />
-    <ImageButton
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        >
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fb"
-        android:src="@drawable/facebook"
-        android:background="#ffffff"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:background="#d30922"
+        android:text="Gmail"
+        android:textAlignment="center"
+        android:textColor="#ffffff" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/google"
+        android:text="Facebook"
+        android:textAlignment="center"
+        android:background="#243bbc"
+        android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
 </LinearLayout>
 </ScrollView>

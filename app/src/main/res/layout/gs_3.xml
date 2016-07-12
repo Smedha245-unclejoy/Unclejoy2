@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9bc89">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:text="How it works?"
+        android:textSize="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hire the Best"
+        android:textSize="20dp"
+        android:textColor="#020202" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hire the store you prefer and fits in your pocket"
+        android:textSize="15dp"
+        android:textColor="#020202" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/g3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Get Started"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="Got it"
+       android:id="@+id/starting"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="#7ff3c3"
+        android:textColor="#030303" />
+    </LinearLayout>
+</ScrollView>

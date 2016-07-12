@@ -2,12 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.medhasingh.unclejoy2">
  <uses-permission android:name="android.permission.INTERNET"/>
-
-    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:name="com.example.medhasingh.unclejoy2.AppController"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -22,18 +24,36 @@
             android:name=".activity_navigation"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustNothing">
+            >
         </activity>
-        <activity android:name=".Hardware"
-            android:label="Hardware"/>
         <activity android:name=".Login"
             android:label="Login"
-            android:windowSoftInputMode="adjustNothing"/>
+            />
         <activity android:name=".Signup"
             android:label="SignUp"/>
-        <activity android:name=".activity_navigation2"
-            android:label="@string/app_name"
+        <activity android:name=".how_it_works"
+            android:label=".How it works?"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".BaseActivity"
+            android:label="Select Images"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".CustomGallery"
+            android:label="Select images"/>
+        <activity android:name=".BaseActivity2"
+            android:label="Your selected images"/>
+        <activity android:name=".Upload"
+            android:label="Your Selected images"
+            android:parentActivityName=".CustomGallery"
+            />
+        <application
+            android:name="com.example.medhasingh.unclejoy2.UILApplication"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:label="Select images"/>
+        <activity android:name=".GetStarted"/>
+
+
+
 
     </application>
 

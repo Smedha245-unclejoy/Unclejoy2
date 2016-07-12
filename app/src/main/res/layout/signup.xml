@@ -5,13 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.medhasingh.unclejoy2.Signup"
-    android:background="#f2cdad">
-    <include android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/app_bar_activity_navigation"
-        >
+    android:background="#ffffff">
 
-    </include>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,18 +14,33 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="User Sign-up"
+        android:text="Unclejoy Says Sweet Hi!"
         android:layout_gravity="center_horizontal"
         android:textSize="30dp"
         android:layout_marginTop="10dp"
         android:textColor="#060606" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#020202"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTER YOUR DETAILS"
+            android:paddingLeft="45dp"
+            android:textColor="#010101"
+            android:layout_marginTop="50dp" />
     <EditText
         android:layout_width="300dp"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:id="@+id/name"
-        android:text="Enter your name"
+        android:hint="Enter your full name"
         />
     <EditText
         android:layout_width="300dp"
@@ -38,7 +48,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:id="@+id/email_sign"
-        android:text="Enter your email"
+        android:hint="Mobile Number"
         />
     <EditText
         android:layout_width="300dp"
@@ -46,7 +56,12 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:id="@+id/password"
-        android:text="Enter your Password"/>
+        android:hint="Email"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_gravity="center"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,30 +71,51 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Confirm your password"
+        android:hint="Confirm  password"
         android:layout_marginTop="10dp"/>
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="Enter Your Phone Number"
-        android:layout_gravity="center"/>
+
     <Button
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:text="Sign-Up"
-        android:background="#636379"
+        android:background="#ed5c18"
+        android:id="@+id/sign"
         android:layout_gravity="center"
         android:gravity="center"
         android:textColor="#fefbfb" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contract"
+            android:paddingLeft="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contract2"
+            android:layout_gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already a User? Login"
-        android:layout_gravity="center"
-        android:layout_marginTop="7dp"
+        android:text="Already a User?"
+        android:id="@+id/already"
         android:clickable="true"
         android:textColor="#060606"
         android:textSize="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Login"
+            android:clickable="true"
+            android:textSize="15dp"
+            android:textColor="#ed5c18" />
+        </LinearLayout>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
