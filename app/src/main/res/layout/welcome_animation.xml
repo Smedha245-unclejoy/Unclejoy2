@@ -4,10 +4,10 @@
     android:layout_height="match_parent">
     <rotate
         android:duration="4000"
-        android:fromDegrees="0.0"
+        android:fromDegrees="1.0"
         android:toDegrees="360"
-        android:pivotX="50%"
-        android:pivotY="50%"
+        android:pivotX="30%"
+        android:pivotY="30%"
         ></rotate>
 
 </set>

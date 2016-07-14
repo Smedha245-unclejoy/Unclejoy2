@@ -25,17 +25,17 @@
         <string-array
             name="timer">
         <item
-            >10-12</item><item>"12-3"</item>
-       <item> "3-6"</item>
-        <item>"6-8"</item>
+            >10:00 A.M.-12:00 P.M.</item><item>"12:00 P.M.-03:00 P.M."</item>
+       <item> "03:00 P.M.-06:00 P.M."</item>
+        <item>"06:00 P.M.-08:00 P.M."</item>
         </string-array>
     <string-array
         name="dater">
         <item
-            >08-07-2016</item><item>09-07-2016</item>
-        <item>10-07-2016</item>
-        <item>11-07-2016</item>
-        <item>12-07-2016</item>
+            >13-07-2016</item><item>14-07-2016</item>
+        <item>15-07-2016</item>
+        <item>16-07-2016</item>
+        <item>17-07-2016</item>
     </string-array>
 
 

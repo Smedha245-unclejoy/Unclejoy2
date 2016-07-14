@@ -50,7 +50,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:label="Select images"/>
-        <activity android:name=".GetStarted"/>
+        <activity android:name=".GetStarted"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
 
 
