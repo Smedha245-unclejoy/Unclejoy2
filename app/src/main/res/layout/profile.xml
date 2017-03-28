@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+   <ImageView
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:layout_marginTop="10dp"
+       android:clickable="true"
+       android:id="@+id/pf"
+       android:layout_gravity="center"
+       android:src="@drawable/profile"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:text="Name"/>
+            <EditText
+                android:layout_width="400px"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_name"
+                android:layout_column="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:text="Mobile number"/>
+            <EditText
+                android:layout_width="400px"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_phone"
+                android:layout_column="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:text="Change password"/>
+            <EditText
+                android:layout_width="400px"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_pass"
+                android:layout_column="2"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:layout_margin="20dp"
+        android:id="@+id/update_pf"
+        android:layout_gravity="center"
+        android:background="#000000"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"/>
+    </LinearLayout>
+</ScrollView>

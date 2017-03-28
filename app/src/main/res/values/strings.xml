@@ -12,15 +12,15 @@
     <string name="page_1">LEADS</string>
     <string name="page_2">RESPONDED</string>
     <string name="page_3">HIRE</string>
-    <string name="contract">By signing up,you agree to our <u>Terms and Conditions</u></string>
-    <string name="contract2">and <u>privacy policies</u></string>
-    <string name="forgot"><u>Forgot Password</u></string>
+    <string name="contract">By signing up,you agree to our <u>Terms and Conditions</u> and <u>Privacy policies</u></string>
+    <string name="forgot">Forgot Password</string>
     <string name="bullet">
         &#8226; Our store partners offer reasonable discounts<br/>
     </string>
     <string name="bullet2"> &#8226; Please upload your list to avail the discounts<br/></string>
     <string name="bullet3">&#8226; Enjoy shopping with unclejoy<br/></string>
     <string name="link"><u>link...</u></string>
+    <string name="share">Hey! I have started using unclejoy.Get it from<a href="http://somesite.com/">here</a></string>
 
         <string-array
             name="timer">
@@ -29,13 +29,9 @@
        <item> "03:00 P.M.-06:00 P.M."</item>
         <item>"06:00 P.M.-08:00 P.M."</item>
         </string-array>
-    <string-array
-        name="dater">
-        <item
-            >13-07-2016</item><item>14-07-2016</item>
-        <item>15-07-2016</item>
-        <item>16-07-2016</item>
-        <item>17-07-2016</item>
+    <string-array name="items">
+        <item>Browse from Gallery</item>
+        <item>Take Picture</item>
     </string-array>
 
 

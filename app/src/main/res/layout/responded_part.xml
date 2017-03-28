@@ -1,94 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:focusable="true"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp"
-    android:clickable="true"
-    android:background="?android:attr/selectableItemBackground">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:context=".activity_navigation">
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#ffe3ca"
+    >
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
+        android:layout_height="wrap_content"
+        card_view:cardPreventCornerOverlap="false"
+        >
+        <TableLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="match_parent"
-            android:background="#4bbad8">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/storename"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_alignParentEnd="true"
-                android:layout_gravity="left"
-                android:layout_width="wrap_content"
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textColor="#000000"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:id="@+id/storename"
+                    android:textSize="17dp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time_elapsed"
+                    android:layout_column="2"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:drawableLeft="@drawable/clockago"
+                    android:text="chandnagar"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="60dp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/store_category"
+                    android:textColor="#000000"
+                    android:layout_column="1"/>
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/map"
+                    android:singleLine="false"
+                    android:maxLines="5"
+                    android:textIsSelectable="true"
+                    android:elegantTextHeight="true"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="60dp"
+                    android:drawableLeft="@drawable/near"
+
+                    android:drawablePadding="5dp"
+                    android:layout_column="2"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date and Time"
+                    android:layout_column="1"
+                    android:textColor="#010101"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textColor="#000000"
+                    android:id="@+id/date"
+                    android:text="date"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="time"
+                    android:textColor="#000000"
+                    android:id="@+id/time"
+                    android:layout_column="2"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Material List"
+                    android:layout_column="1"
+                    android:textColor="#030303"
+                    android:textStyle="bold" />
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/link"
+                    android:text="link.."
+
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:layout_column="1"
+                    android:textColor="#c8660b" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/booking_id"
+                    android:textColor="#ffffff"
+                    android:layout_column="2"/>
+            </TableRow>
+            <Button
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:textColor="#ffffff" />
-
-            <TextView
-                android:id="@+id/time_elapsed"
-                android:layout_alignParentEnd="true"
-                android:layout_width="wrap_content"
                 android:layout_gravity="right"
-                android:layout_marginTop="-20dp"
-                android:layout_height="wrap_content"
-                android:textColor="#ffffff" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:id="@+id/store_category"
-                android:text="store type"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/map"
-                android:layout_gravity="right"
-                android:layout_marginTop="-15dp"
-                android:paddingLeft="5dp"
-                android:text="map"/>
+                android:text="View Responded stores"
+                android:id="@+id/responded_stores"
+                android:layout_marginLeft="150dp"
+                android:textAllCaps="false"
+                android:background="#d26a1a"
+                android:textSize="19dp"
+                android:textColor="#f9cd9d"
+                android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:id="@+id/date"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/time"
-                android:layout_marginTop="-18dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginLeft="100dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="View Material List"/>
+        </TableLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Date and Time"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/link"/>
-        </LinearLayout>
     </android.support.v7.widget.CardView>
-    </LinearLayout>
-
-
-</ScrollView>
+</LinearLayout>

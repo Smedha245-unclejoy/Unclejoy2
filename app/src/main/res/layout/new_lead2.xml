@@ -3,27 +3,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/newlead_frame"
+    android:layout_height="fill_parent"
+
     tools:context=".activity_navigation">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Choose the desired store"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:textColor="#010101"
-        android:textSize="20dp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swipe"
+        android:layout_height="match_parent"
+        >
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/flip_me3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
 
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:id="@+id/recyclerView"
-            android:layout_marginTop="15dp">
+            android:background="#030303"
+           >
 
         </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/refresh"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pull down to refresh"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Couldn't load data properly "
+                    android:textColor="#e36e20" />
 
 
-
+            </LinearLayout>
+        </ViewFlipper>
+    </android.support.v4.widget.SwipeRefreshLayout>
 </LinearLayout>

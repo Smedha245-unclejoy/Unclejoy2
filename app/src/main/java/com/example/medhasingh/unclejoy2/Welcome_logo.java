@@ -31,7 +31,7 @@ public class Welcome_logo extends Activity {
             @Override
             public void onAnimationEnd(Animation animation) {
                 finish();
-                startActivity(new Intent(getApplicationContext(),activity_navigation.class));
+                startActivity(new Intent(getApplicationContext(),GetStarted.class));
             }
 
             @Override

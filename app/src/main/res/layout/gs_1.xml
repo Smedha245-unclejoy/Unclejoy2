@@ -1,61 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/getstarted1">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:weightSum="7"
         android:orientation="vertical">
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Skip"
+            android:textColor="#ffffff"
+
+            android:padding="10dp"
+            android:clickable="true"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:id="@+id/skip"
             android:layout_gravity="right"
             android:paddingTop="5dp"
-            android:background="#fffefe" />
+             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
+            android:layout_weight="1"
             android:layout_gravity="center"
             android:text="How It Works?"
-            android:textSize="30dp"/>
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#ffffff" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
+            android:layout_weight="1"
             android:text="Submit Required Material List"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:textColor="#020202" />
+            android:textColor="#fefefe" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:text="Provide request for the material you required"
             android:textSize="15dp"
             android:layout_marginBottom="15dp"
-            android:textColor="#020202" />
+            android:textColor="#ffffff" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="30dp"
+            android:layout_weight="2"
             android:paddingRight="30dp"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:src="@drawable/g1"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:layout_gravity="center_horizontal|bottom"
-            android:text="Get Started"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="0dp"
-            android:textColor="#e77817" />
+
     </LinearLayout>
 
 </ScrollView>

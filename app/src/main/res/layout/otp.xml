@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#182d53">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <TableRow>
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/otp"
+
+                    android:layout_gravity="center"
+                    />
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="otp"
+                        android:ems="25"
+                        android:id="@+id/otp"
+                        android:inputType="number"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="#000000"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"/>
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+            </TableRow>
+        </TableLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/verify"
+        android:text="Verify"
+        android:background="#0f2055"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:text="No Otp recieved ?"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/abc_action_bar_content_inset_material"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resend"
+        android:layout_marginTop="10dp"
+        android:background="#feffff"
+        android:clickable="true"
+        android:id="@+id/resend"
+        android:textColor="#18213e"
+        android:textAlignment="center"
+        android:textSize="@dimen/abc_action_bar_content_inset_material" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

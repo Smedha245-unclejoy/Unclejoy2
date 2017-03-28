@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="50dp"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    tools:Context="com.example.medhasingh.unclejoy2.Fragment5">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bullet"
-        android:textColor="#020202"
-        android:textSize="18dp" />
-    <TextView
+    tools:Context="com.example.medhasingh.unclejoy2.Fragment5"
+    android:background="#fbcf9c">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#020202"
-        android:textSize="18dp"
-        android:text="@string/bullet2"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#020202"
-        android:textSize="18dp"
-        android:text="@string/bullet3"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginRight="10dp"
+       android:layout_marginLeft="10dp"
+       android:background="#fbcf9c">
+
+       <com.github.siyamed.shapeimageview.CircularImageView
+           android:layout_height="100dp"
+           android:layout_gravity="center"
+           android:layout_width="100dp"
+           android:src="@drawable/upload"
+           android:background="#fbcf9c" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Upload your material list and avail attractive discounts from our store partners !!"
+           android:textColor="#000000"
+           android:textAlignment="center"
+           android:textStyle="italic" />
+
+   </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
-        android:textColor="#020202"
+        android:textColor="#1d4a6b"
         android:textSize="20dp"
         android:text="Upload your material List :"/>
     <CheckBox
@@ -38,6 +46,7 @@
         android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:theme="@style/MyCheckBox2"
         android:text="I don't have the list"
          />
     <CheckBox
@@ -45,37 +54,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:theme="@style/MyCheckBox2"
         android:text="Yes,I have the list"
 
         />
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:id="@+id/bigpic"
-
-        />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:layout_marginTop="20dp"
+       >
+       <GridView
+           android:layout_width="match_parent"
+           android:layout_height="180dp"
+           android:numColumns="3"
+           android:id="@+id/grid_select"
+           android:background="#a4b9d0dd" />
+   </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp" />
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp" />
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp" />
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp" />
-    </LinearLayout>
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/back2"
+        android:layout_gravity="left"
         android:layout_marginTop="5dp"
         android:text="Back"
         />
@@ -83,8 +87,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/next2"
-        android:layout_gravity="right"
+
         android:layout_marginTop="-45dp"
+        android:layout_gravity="right"
         android:text="Next"/>
+    </LinearLayout>
 
 </LinearLayout>
+    </ScrollView>

@@ -4,131 +4,278 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#243c69"
     tools:context="com.example.medhasingh.unclejoy2.Signup"
-    android:background="#ffffff">
+    android:fillViewport="false"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Unclejoy Says Sweet Hi!"
-        android:layout_gravity="center_horizontal"
-        android:textSize="30dp"
-        android:layout_marginTop="10dp"
-        android:textColor="#060606" />
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="22dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign Up"
             android:layout_gravity="center_horizontal"
-            android:textColor="#020202"
+            android:textColor="#ffffff"
             android:textSize="30dp"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ENTER YOUR DETAILS"
-            android:paddingLeft="45dp"
-            android:textColor="#010101"
+            android:textColor="#ffffff"
             android:layout_marginTop="50dp" />
-    <EditText
-        android:layout_width="300dp"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:id="@+id/name"
-        android:hint="Enter your full name"
-        />
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:id="@+id/email_sign"
-        android:hint="Mobile Number"
-        />
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:id="@+id/password"
-        android:hint="Email"/>
-        <EditText
-            android:layout_width="300dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:layout_gravity="center"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="#Must be greater than 8 characters"
-        android:layout_gravity="center"/>
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:hint="Confirm  password"
-        android:layout_marginTop="10dp"/>
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:text="Sign-Up"
-        android:background="#ed5c18"
-        android:id="@+id/sign"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textColor="#fefbfb" />
+
+                <TableRow>
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/email"
+                        android:layout_gravity="center"
+                        />
+                    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp">
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:ems="15"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/name2"
+                            android:theme="@style/MyEditText"
+                            android:inputType="textPersonName"
+                            android:textColor="#ffffff"
+                            android:hint="enter your full name"
+                            android:textColorHint="#ffffff" />
+                    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TableRow>
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/phone"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+91"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="#ed5c18"
+                        android:textSize="20dp" />
+                    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp">
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:theme="@style/MyEditText"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/mobile"
+                            android:ems="15"
+                            android:hint="mobile number"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff" />
+                    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TableRow>
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/name"
+                        android:layout_gravity="center"
+                        />
+                    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp">
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/email2"
+                            android:theme="@style/MyEditText"
+                            android:inputType="textEmailAddress"
+                            android:ems="15"
+                            android:hint="email"
+                            android:textColorHint="#ffffff" />
+                    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TableRow>
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/pass"
+                        android:layout_gravity="center"
+                        />
+                    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp">
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="password"
+                            android:ems="15"
+                            android:theme="@style/MyEditText"
+                            android:inputType="textPassword"
+                            android:id="@+id/password2"
+                            android:layout_gravity="center"
+                            android:textColorHint="#ffffff" />
+                    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#Must be greater than 8 characters"
+            android:layout_gravity="center"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TableRow>
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/check"
+                        android:layout_gravity="center"
+                        />
+                    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp">
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Confirm  password"
+                            android:ems="15"
+                            android:theme="@style/MyEditText"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="10dp"
+                            android:textColorHint="#ffffff" />
+                    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Sign-Up"
+            android:layout_marginTop="20dp"
+            android:background="#ed5c18"
+            android:id="@+id/sign"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#fefbfb" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/contract"
-            android:paddingLeft="40dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/contract2"
-            android:layout_gravity="center_horizontal"
-            />
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="40dp" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="center">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Already a User?"
-        android:id="@+id/already"
-        android:clickable="true"
-        android:textColor="#060606"
-        android:textSize="15dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="Login"
-            android:clickable="true"
-            android:textSize="15dp"
-            android:textColor="#ed5c18" />
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already a User?"
+                android:id="@+id/already"
+                android:clickable="true"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Login"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/log_sign"
+                android:clickable="true"
+                android:textSize="20dp"
+                android:textColor="#ed5c18" />
         </LinearLayout>
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/facebook"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:background="#fefefe" />
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/google"
-        android:layout_gravity="center"
-        android:background="#ffffff"
-        android:layout_marginTop="5dp"/>
+
     </LinearLayout>
 </ScrollView>

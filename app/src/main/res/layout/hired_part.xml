@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#ffe3ca">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:id="@+id/hire_name"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/hire_time"
+                android:drawableLeft="@drawable/clockago"
+                android:text="time"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="5dp"
+                />
+        </TableRow>
+           <TableRow>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/hire_type"
+                   android:layout_column="1"
+                   android:textColor="#000000" />
+               <TextView
+                   android:layout_width="160dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/hire_location"
+                   android:singleLine="false"
+                   android:maxLines="5"
+                   android:layout_marginLeft="60dp"
+                   android:drawableLeft="@drawable/near"
+                   android:padding="10dp"
+                   android:drawablePadding="10dp"
+                   android:layout_column="2"
+                   android:layout_marginTop="5dp"
+                   android:textColor="#000000" />
+           </TableRow>
+           <TableRow>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Date and Time"
+                   android:layout_column="1"
+                   android:textColor="#000000"
+                   android:textStyle="bold" />
+           </TableRow>
+           <TableRow>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_column="1"
+                   android:id="@+id/hire_date"
+                   android:text="date"
+                   android:textColor="#000000" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="time"
+                   android:id="@+id/hire_dtime"
+                  android:layout_column="2"
+                   android:textColor="#000000" />
+           </TableRow>
+           <TableRow>
+               <TextView
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:layout_column="1"
+                   android:id="@+id/mobile_no"
+                   android:text="Contact Store"
+                   android:textColor="#000000"
+                   android:textStyle="bold"/>
+
+           </TableRow>
+           <Button
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text="Contact Store"
+               android:drawableLeft="@drawable/phone"
+               android:id="@+id/hire_call"
+               android:layout_marginLeft="150dp"
+               android:textAllCaps="false"
+               android:background="@drawable/background2"
+               android:textSize="19dp"
+               android:textColor="#577d4b"
+               android:textStyle="bold" />
+
+       </TableLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

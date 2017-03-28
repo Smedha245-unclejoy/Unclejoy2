@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.medhasingh.unclejoy2">
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
  <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name="com.example.medhasingh.unclejoy2.AppController"
         android:allowBackup="true"
+        android:largeHeap="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:windowSoftInputMode="stateHidden|adjustPan"
         android:theme="@style/AppTheme">
 
         <activity android:name=".Welcome_logo">
@@ -27,35 +32,44 @@
             >
         </activity>
         <activity android:name=".Login"
-            android:label="Login"
+            android:theme="@style/AppTheme.NoActionBar"
+
+
             />
         <activity android:name=".Signup"
-            android:label="SignUp"/>
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".how_it_works"
             android:label=".How it works?"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".BaseActivity"
-            android:label="Select Images"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".CustomGallery"
-            android:label="Select images"/>
-        <activity android:name=".BaseActivity2"
-            android:label="Your selected images"/>
-        <activity android:name=".Upload"
-            android:label="Your Selected images"
-            android:parentActivityName=".CustomGallery"
-            />
-        <application
-            android:name="com.example.medhasingh.unclejoy2.UILApplication"
-            android:supportsRtl="true"
-            android:theme="@style/AppTheme"
-            android:label="Select images"/>
+
         <activity android:name=".GetStarted"
             android:theme="@style/AppTheme.NoActionBar"/>
-
-
-
+        <activity android:name=".Store_list"
+            android:label="Responded Stores"
+            android:parentActivityName=".activity_navigation"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Settings"
+            android:label="Settings"
+            android:parentActivityName=".activity_navigation"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".OTP"
+            android:label="verify"/>
+        <activity android:name=".ForgotPassword"
+            android:label="Forgot Password"
+            />
+        <activity
+            android:name="nl.changer.polypicker.ImagePickerActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Profile"
+            android:label="Profile settings"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".Settings"/>
+        <activity android:name=".Pictures"
+            android:label="Your Uploaded List"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".activity_navigation"/>
+       <activity android:name=".Internet"
+           android:label="Oh...no"/>
 
     </application>
-
 </manifest>
