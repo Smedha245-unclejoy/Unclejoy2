@@ -1,0 +1,2 @@
+# Unclejoy2
+This is an E-commerce based  android application developed by me for Unclejoy India Pvt. Ltd. It connects customers and Material Stores like Hardware,Electrical and Painting material.Users upload their material list then stores respond with corresponding discounts they are willing to offer and users can chose the one most feasible to them.They can also search for nearby stores connected to Unclejoy. Here is the link for the apk : https://github.com/Smedha245-unclejoy/Unclejoy2/blob/medha/app-debug.apk
